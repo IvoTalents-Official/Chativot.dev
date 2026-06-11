@@ -13,7 +13,7 @@
 
 - **Andreina Marrón** - CEO/Founder (`andreina@ivotalents.com`)
 - **Yunai Castillo** - COO (relaciones comerciales y clientes)
-- **Rodrigo González** - Desarrollador/Programador (`devlocal2026` en GitHub)
+- **Smith Córdoba** - Desarrollador/Programador (`programador-del` en GitHub, `programador@chativot.com`)
 
 ---
 
@@ -50,18 +50,18 @@
 
 ### Servidor de Producción
 - **Proveedor:** AWS Lightsail
-- **IP:** `32.193.7.26`
-- **Acceso SSH:** `ssh -i ~/.ssh/andreina.pem ubuntu@32.193.7.26`
+- **IP:** `[PROD_SERVER_IP]`
+- **Acceso SSH:** `ssh -i ~/.ssh/andreina.pem ubuntu@[PROD_SERVER_IP]`
 - **Alias SSH:** `chativot-produccion` (en `~/.ssh/config`)
 - **Snapshots:** Diarios a las 3AM UTC-5, retención 7 días
 
 ### Servidor de Desarrollo
 - **Proveedor:** Hetzner
 - **Plan:** CX33
-- **IP:** `89.167.98.137`
+- **IP:** `[DEV_SERVER_IP]`
 - **Hostname:** `chativotdev`
 - **Specs:** Ubuntu 24.04, 16 CPU AMD EPYC, 30GB RAM, 75GB disco
-- **UFW activo:** Puertos 22/80/443 públicos; 5050/5678/5540/8081/3000/10051 restringidos a VPN IP `190.153.6.33`
+- **UFW activo:** Puertos 22/80/443 públicos; 5050/5678/5540/8081/3000/10051 restringidos a VPN IP `[VPN_IP]`
 
 ### Dominios y Subdominios
 - **chat.chativot.com** - Chatwoot SuperAdmin
@@ -96,17 +96,17 @@ Chativot/
 
 ### Estructura de Ramas
 - **`main`** - Rama principal protegida (producción)
-- **`dev`** - Rama de desarrollo (Rodrigo trabaja aquí)
+- **`dev`** - Rama de desarrollo (Smith Córdoba trabaja aquí)
 
 ### Workflow de Desarrollo
-1. Rodrigo trabaja en rama `dev`
+1. Smith Córdoba trabaja en rama `dev`
 2. Commits con mensajes descriptivos siguiendo convenciones
 3. Pull Request de `dev` → `main`
 4. Andreina revisa y aprueba PR
 5. Merge a `main`
 6. Deploy a producción
 
-**⚠️ Rodrigo NUNCA debe hacer commit directo a `main`**
+**⚠️ Smith Córdoba NUNCA debe hacer commit directo a `main`**
 
 ### Configuración Git de Andreina
 ```bash
@@ -156,7 +156,7 @@ git config user.email "andreina@ivotalents.com"
 - **Estado:** Presale activa
 - **Integración:** WhatsApp Business API + OCR + Laravel webhook
 - **Funcionalidad:** Bot de confirmación de pagos Zelle/Binance
-- **Webhook producción:** `32.193.7.26` (AWS Lightsail)
+- **Webhook producción:** `[PROD_SERVER_IP]` (AWS Lightsail)
 - **Spec técnica:** `integration-whatsapp-chatwoot-chativot.md`
 
 ### ChatIvo (Próximo Cliente)
@@ -236,9 +236,9 @@ git config user.email "andreina@ivotalents.com"
 ## ⚠️ Recordatorios Pendientes
 
 - [x] Replicar configuración UFW en AWS Lightsail producción
-- [x] Rodrigo: Configurar dominio + HTTPS para n8n Hetzner DEV
-- [x] Rodrigo: Crear `variables-cliente.md` No aplica: gestión de clientes es 100% vía GUI`
-- [x] Rodrigo: Agregar headers de comentarios internos en scripts `guiones/`
+- [x] Smith Córdoba: Configurar dominio + HTTPS para n8n Hetzner DEV
+- [x] Smith Córdoba: Crear `variables-cliente.md` No aplica: gestión de clientes es 100% vía GUI`
+- [x] Smith Córdoba: Agregar headers de comentarios internos en scripts `guiones/`
 - [ ] Andreina: Template de Change Management en Obsidian
 - [x] Activar backups automáticos en Hetzner DEV
 - [ ] Remediar hallazgo C-01 (password compartido en 6 servicios) - Pendiente 
