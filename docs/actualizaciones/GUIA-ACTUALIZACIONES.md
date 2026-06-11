@@ -131,7 +131,7 @@ bash /opt/chativot/scripts/update-chatwoot.sh v4.13.0
 
 **Paso 3 — Si DEV quedó bien, ejecutar en PROD:**
 ```bash
-ssh root@32.193.7.26
+ssh root@[PROD_SERVER_IP]
 bash /opt/chativot/scripts/update-chatwoot.sh v4.13.0
 ```
 

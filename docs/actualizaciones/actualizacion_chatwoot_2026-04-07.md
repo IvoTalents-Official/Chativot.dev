@@ -79,7 +79,7 @@ docker compose up -d --no-deps chatwoot-rails chatwoot-sidekiq
 
 ---
 
-### 4.2 Servidor de Producción (32.193.7.26)
+### 4.2 Servidor de Producción ([PROD_SERVER_IP])
 
 **Actualización de imagen:**
 ```bash

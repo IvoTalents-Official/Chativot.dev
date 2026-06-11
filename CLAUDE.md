@@ -83,7 +83,7 @@ Chativot/
 ├── .env.ejemplo           # Template de variables de entorno
 ├── .gitignore
 ├── CLAUDE.md             # Este archivo
-├── LÉAME.md              # README principal
+├── README.md             # README principal
 ├── docker-compose.yml    # Desarrollo
 └── docker-compose.prod.yml # Producción
 ```

@@ -67,7 +67,7 @@ docker logs n8n --tail=30
 
 ---
 
-### 3.2 Servidor de Producción (32.193.7.26)
+### 3.2 Servidor de Producción ([PROD_SERVER_IP])
 
 **Verificación previa:**
 ```bash
