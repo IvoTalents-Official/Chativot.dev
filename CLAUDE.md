@@ -228,7 +228,7 @@ git config user.email "andreina@ivotalents.com"
 
 - **Email trabajo:** `andreina@ivotalents.com`
 - **Email personal/Claude:** `amarron69@gmail.com`
-- **Slack:** Canal `#desarrollo` (C0AKYTDL7T4), `#backend` (C0AL489N494)
+- **Slack:** Canal `#general` (C0AKYTDL7T4), `#backend_zabbix` (C0AL489N494), `#desarrollo_docu_project` (C0AKHDYFQQ7)
 - **GitHub:** Notificaciones integradas a Slack
 
 ---
