@@ -191,7 +191,7 @@ services:
       DB_PORT: "5432"
       DB_NAME: fzap
       DB_USER: fzap
-      DB_PASSWORD: ce43bf12c249
+      DB_PASSWORD: ${DB_PASSWORD}
       SESSION_DEVICE_NAME: Fzap
       WEBHOOK_FORMAT: json
     volumes:

@@ -175,7 +175,7 @@ docker exec postgres psql -U postgres -c "DROP DATABASE chatwoot;"
 docker exec postgres psql -U postgres -c "CREATE DATABASE chatwoot OWNER chatwoot;"
 docker cp /opt/backups/chatwoot/chatwoot_db_v4.12.1_FECHA.dump postgres:/tmp/restore.dump
 docker exec postgres bash -c \
-  "PGPASSWORD='ce43bf12c249' pg_restore -U chatwoot --dbname=chatwoot --no-owner /tmp/restore.dump"
+  "PGPASSWORD='[CONTRASEÑA_DB]' pg_restore -U chatwoot --dbname=chatwoot --no-owner /tmp/restore.dump"
 
 # 3. Restaurar storage
 docker run --rm \
